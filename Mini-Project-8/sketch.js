@@ -5,9 +5,10 @@ let r, g, b;
 let angle, angleVel;
 let radDist;
 let q;
+let a
 
 function setup() {
-  let canvas = createCanvas(windowWidth-15, windowHeight-140);
+  let canvas = createCanvas(windowWidth-15, windowHeight-150);
   canvas.parent("canvasContainer")
   background(30,10)
   x = 250;
@@ -64,9 +65,4 @@ function draw() {
     textFont("Georgia");
     text("V I D E O", x + 20, y + 39);
   }
-}
-
-function buttonClicked() {
-  console.log("Button Clicked!");
-  background(random(255));
 }
