@@ -1,0 +1,17 @@
+html, body {
+  margin: 10;
+  padding: 0;
+  background-color:rgb(30, 30, 30);
+}
+
+.text {
+  color: white;
+}
+
+.title {
+  color:white
+}
+
+canvas {
+  display: block;
+}
