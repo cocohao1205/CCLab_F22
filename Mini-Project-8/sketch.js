@@ -7,9 +7,9 @@ let radDist;
 let q;
 
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight-150);
+  let canvas = createCanvas(windowWidth-15, windowHeight-140);
   canvas.parent("canvasContainer")
-  background(30)
+  background(30,10)
   x = 250;
   y = 200;
   xSpd = random(1, 3);
