@@ -1,0 +1,107 @@
+html,
+body {
+  margin: 10;
+  padding: 0;
+  background-color: rgb(250, 250, 250)
+}
+
+.title {
+  color: black;
+  font-family: "Zen Dots";
+  margin-top: 0.01%;
+  margin-bottom: 0.01%;
+  font-size: 25vmin;
+}
+
+.text {
+  color: black;
+  font-family: Verdana, sans-serif;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-size: 2vmin;
+}
+
+.box1 {
+  width: 90%;
+  height: 10%;
+  padding: 2%;
+  border-width: 2%;
+  border-color: black;
+  border-style: dotted;
+  display: inline-block;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-left: 2.5%;
+}
+
+.box2 {
+  width: 30%;
+  height: 10%;
+  padding: 2%;
+  border-width: 2%;
+  border-color: black;
+  border-style: double;
+  display: inline-block;
+  text-align: center;
+  margin-right: 1%;
+}
+
+.box3 {
+  width: 30%;
+  height: 10%;
+  padding: 2%;
+  border-width: 2%;
+  border-color: black;
+  border-style: double;
+  display: inline-block;
+  text-align: center;
+  margin-left: 1%;
+}
+
+.box4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  align-content: space-between;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+
+.box5 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  align-content: space-between;
+  justify-content: center;
+  margin-bottom: 0%;
+}
+
+.button {
+  background-color: whitesmoke;
+  border: 5%;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.image {
+  margin-top: 0%;
+}
+
+.project {
+  margin-top: 0%;
+  justify-content: center;
+  margin-left: 40%;
+}
+
+canvas {
+  display: block;
+}
