@@ -102,7 +102,7 @@ function setup() {
   textSize(50);
 
   //tempo
-  tempoSlider = createSlider(90, 150, 120)
+  tempoSlider = createSlider(1, 10, 5)
   tempoSlider.position(500, 50)
 
   //blocks
@@ -158,7 +158,7 @@ function setup() {
   s = new StopButton(800, 50)
 
   //line
-  lineX = 94
+  lineX = 93.5
   lineSpd = 0
 }
 
@@ -679,11 +679,11 @@ class Block {
     }
   }
   sound() {
-    if (lineX >= this.x - 25.5 && lineX <= this.x - 24.5 && this.color === 220) {
+    if (lineX >= this.x - 26 && lineX <= this.x - 24 && this.color === 220) {
       this.color = 100
       this.snd.play();
     }
-    if (lineX >= this.x + 24.5 && lineX <= this.x + 25.5 && this.color === 100) {
+    if (lineX >= this.x + 24 && lineX <= this.x + 26 && this.color === 100) {
       this.color = 220
       this.snd.stop();
     }
@@ -701,7 +701,7 @@ class PlayButton {
   click() {
     if (dist(this.x, this.y, mouseX, mouseY) < 500 / 30) {
       if (lineSpd === 0) {
-        lineSpd = map(tempo, 90, 150, 0.5, 2.5);
+        lineSpd = map(tempo, 1, 10, 1, 2);
       }
     }
   }
@@ -766,7 +766,7 @@ class StopButton {
   }
   click() {
     if (dist(this.x, this.y, mouseX, mouseY) < 500 / 30) {
-      lineX = 94
+      lineX = 93.5
       lineSpd = 0
     }
   }
