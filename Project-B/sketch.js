@@ -94,18 +94,20 @@ function setup() {
 
   //song title show
   input = createInput();
-  input.position(200, 50);
+  input.position(300,50);
   button = createButton("submit");
   button.position(input.x + input.width, 50);
   button.mousePressed(write);
   title = createElement("h3", "Song Title: Unnamed");
-  title.position(200, 5);
+  title.position(300, 5); 
+ 
   textAlign(CENTER);
   textSize(50);
 
   //tempo
   tempoSlider = createSlider(1, 10, 5)
-  tempoSlider.position(500, 50)
+  tempoSlider.position(650, 50)
+
 
   //blocks
   for (let i = 0; i < 16; i++) {
@@ -121,7 +123,7 @@ function setup() {
     G5[i] = new Block(120 + (i * 1000) / 20, 315, SoundG5);
     F5S[i] = new Block(120 + (i * 1000) / 20, 340, SoundF5S);
     F5[i] = new Block(120 + (i * 1000) / 20, 365, SoundF5);
-    
+
     E5[i] = new Block(120 + (i * 1000) / 20, 390, SoundE5);
     D5S[i] = new Block(120 + (i * 1000) / 20, 415, SoundD5S);
     D5[i] = new Block(120 + (i * 1000) / 20, 440, SoundD5);
@@ -134,7 +136,7 @@ function setup() {
     G4[i] = new Block(120 + (i * 1000) / 20, 615, SoundG4);
     F4S[i] = new Block(120 + (i * 1000) / 20, 640, SoundF4S);
     F4[i] = new Block(120 + (i * 1000) / 20, 665, SoundF4);
-    
+
     E4[i] = new Block(120 + (i * 1000) / 20, 690, SoundE4);
     D4S[i] = new Block(120 + (i * 1000) / 20, 715, SoundD4S);
     D4[i] = new Block(120 + (i * 1000) / 20, 740, SoundD4);
@@ -227,7 +229,7 @@ function draw() {
     f5.display();
     f5.sound();
   }
-  
+
   for (let i = 0; i < E5.length; i++) {
     let e5 = E5[i];
     e5.display();
@@ -288,7 +290,7 @@ function draw() {
     f4.display();
     f4.sound();
   }
-  
+
   for (let i = 0; i < E4.length; i++) {
     let e4 = E4[i];
     e4.display();
@@ -379,7 +381,7 @@ function draw() {
   strokeWeight(2);
   stroke(0)
   line(lineX, 90 - 1000 / 80, lineX, 1003);
-  
+
   //key
   stroke(0)
   strokeWeight(1)
@@ -387,90 +389,90 @@ function draw() {
   rectMode(CENTER)
 
   fill(0)
-  rect(55,115,80,25)
-  rect(55,165,80,25)
-  rect(55,240,80,25)
-  rect(55,290,80,25)  
-  rect(55,340,80,25) 
-  rect(55,415,80,25)
-  rect(55,465,80,25)
-  rect(55,540,80,25)
-  rect(55,590,80,25)
-  rect(55,640,80,25)
-  rect(55,715,80,25)
-  rect(55,765,80,25)
-  rect(55,840,80,25)
-  rect(55,890,80,25)
-  rect(55,940,80,25)
-  
+  rect(55, 115, 80, 25)
+  rect(55, 165, 80, 25)
+  rect(55, 240, 80, 25)
+  rect(55, 290, 80, 25)
+  rect(55, 340, 80, 25)
+  rect(55, 415, 80, 25)
+  rect(55, 465, 80, 25)
+  rect(55, 540, 80, 25)
+  rect(55, 590, 80, 25)
+  rect(55, 640, 80, 25)
+  rect(55, 715, 80, 25)
+  rect(55, 765, 80, 25)
+  rect(55, 840, 80, 25)
+  rect(55, 890, 80, 25)
+  rect(55, 940, 80, 25)
+
   noFill()
-  rect(55,90,80,25)
-  rect(55,140,80,25)
-  rect(55,190,80,25)
-  rect(55,215,80,25)
-  rect(55,265,80,25)  
-  rect(55,315,80,25)
-  rect(55,365,80,25)
-  rect(55,390,80,25)
-  rect(55,440,80,25)  
-  rect(55,490,80,25)
-  rect(55,515,80,25)
-  rect(55,565,80,25)
-  rect(55,615,80,25)
-  rect(55,665,80,25)
-  rect(55,690,80,25)
-  rect(55,740,80,25)
-  rect(55,790,80,25)
-  rect(55,815,80,25)
-  rect(55,865,80,25)
-  rect(55,915,80,25)
-  rect(55,965,80,25)
-  rect(55,990,80,25)
+  rect(55, 90, 80, 25)
+  rect(55, 140, 80, 25)
+  rect(55, 190, 80, 25)
+  rect(55, 215, 80, 25)
+  rect(55, 265, 80, 25)
+  rect(55, 315, 80, 25)
+  rect(55, 365, 80, 25)
+  rect(55, 390, 80, 25)
+  rect(55, 440, 80, 25)
+  rect(55, 490, 80, 25)
+  rect(55, 515, 80, 25)
+  rect(55, 565, 80, 25)
+  rect(55, 615, 80, 25)
+  rect(55, 665, 80, 25)
+  rect(55, 690, 80, 25)
+  rect(55, 740, 80, 25)
+  rect(55, 790, 80, 25)
+  rect(55, 815, 80, 25)
+  rect(55, 865, 80, 25)
+  rect(55, 915, 80, 25)
+  rect(55, 965, 80, 25)
+  rect(55, 990, 80, 25)
 
   //keyText
   noStroke()
   fill(250)
-  text("D6S",75,120)
-  text("C6S",75,170)
-  text("A6S",75,245) 
-  text("G5S",75,295)  
-  text("F5S",75,345)
-  text("D5S",75,420)  
-  text("C5S",75,470)  
-  text("A5S",75,545)
-  text("G4S",75,595)
-  text("F4S",75,645)
-  text("D4S",75,720)
-  text("C4S",75,770)
-  text("A4S",75,845)
-  text("G3S",75,895)
-  text("F3S",75,945)
-  
+  text("D6S", 75, 120)
+  text("C6S", 75, 170)
+  text("A6S", 75, 245)
+  text("G5S", 75, 295)
+  text("F5S", 75, 345)
+  text("D5S", 75, 420)
+  text("C5S", 75, 470)
+  text("A5S", 75, 545)
+  text("G4S", 75, 595)
+  text("F4S", 75, 645)
+  text("D4S", 75, 720)
+  text("C4S", 75, 770)
+  text("A4S", 75, 845)
+  text("G3S", 75, 895)
+  text("F3S", 75, 945)
+
   fill(0)
-  text("E6",75,95)
-  text("D6",75,145)
-  text("C6",75,195)
-  text("B6",75,220)
-  text("A6",75,270)
-  text("G5",75,320)  
-  text("F5",75,370) 
-  text("E5",75,395)  
-  text("D5",75,445)
-  text("C5",75,495)
-  text("B5",75,520)
-  text("A5",75,570)
-  text("G4",75,620)
-  text("F4",75,670)
-  text("E4",75,695)
-  text("D4",75,745)
-  text("C4",75,795)
-  text("B4",75,820)
-  text("A4",75,870)
-  text("G3",75,920)
-  text("F3",75,970)
-  text("E3",75,995)
+  text("E6", 75, 95)
+  text("D6", 75, 145)
+  text("C6", 75, 195)
+  text("B6", 75, 220)
+  text("A6", 75, 270)
+  text("G5", 75, 320)
+  text("F5", 75, 370)
+  text("E5", 75, 395)
+  text("D5", 75, 445)
+  text("C5", 75, 495)
+  text("B5", 75, 520)
+  text("A5", 75, 570)
+  text("G4", 75, 620)
+  text("F4", 75, 670)
+  text("E4", 75, 695)
+  text("D4", 75, 745)
+  text("C4", 75, 795)
+  text("B4", 75, 820)
+  text("A4", 75, 870)
+  text("G3", 75, 920)
+  text("F3", 75, 970)
+  text("E3", 75, 995)
   stroke(2)
-  
+
   //playbutton
   p1.display();
 
@@ -538,8 +540,8 @@ function mouseClicked() {
     let f5 = F5[i];
     f5.click();
   }
-  
-    for (let i = 0; i < E5.length; i++) {
+
+  for (let i = 0; i < E5.length; i++) {
     let e5 = E5[i];
     e5.click();
   }
@@ -587,8 +589,8 @@ function mouseClicked() {
     let f4 = F4[i];
     f4.click();
   }
-  
-    for (let i = 0; i < E4.length; i++) {
+
+  for (let i = 0; i < E4.length; i++) {
     let e4 = E4[i];
     e4.click();
   }
