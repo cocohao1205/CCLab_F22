@@ -43,7 +43,8 @@ let tempo;
 let SoundE6, SoundD6S, SoundD6, SoundC6S, SoundC6, SoundB6, SoundA6S, SoundA6
 let SoundG5S, SoundG5, SoundF5S, SoundF5, SoundE5, SoundD5S, SoundD5, SoundC5S, SoundC5, SoundB5, SoundA5S, SoundA5
 let SoundG4S, SoundG4, SoundF4S, SoundF4, SoundE4, SoundD4S, SoundD4, SoundC4S, SoundC4, SoundB4, SoundA4S, SoundA4
-let SoundG3S, SoundG3, SoundF3S, SoundF3, SoundE3
+let SoundG3S, SoundG3, SoundF3S, SoundF3, SoundE3;
+let canvas2
 
 function preload() {
   SoundE6 = loadSound("assets/E6.m4a");
@@ -88,7 +89,8 @@ function preload() {
 
 function setup() {
   //song title input
-  createCanvas(1000, 1100);
+  canvas2 = createCanvas(1000, 1100);
+  canvas2.parent("canvasContainer")
 
   //song title show
   input = createInput();
