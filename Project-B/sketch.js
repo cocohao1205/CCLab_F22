@@ -102,7 +102,7 @@ function setup() {
   button.mousePressed(write);
   title = createElement("h3", "Song Title: Unnamed");
   title.parent("canvasContainer")
-  title.position(200, 5); 
+  title.position(200, 2); 
  
   //tempo
   tempoSlider = createSlider(1, 10, 5);
