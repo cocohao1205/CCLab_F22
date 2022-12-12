@@ -98,11 +98,12 @@ body {
 
 #canvasContainer {
   position: absolute;
-  margin-top: 0%;
-  
+  margin-top: 1%;
   left: 50%;
   top: 0%;
   transform: translate(-50%, 0);
+  border-color: black;
+  border-style: dotted;
   /* display: flex; */
   /* justify-content: center; */
 }

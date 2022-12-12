@@ -89,7 +89,7 @@ function preload() {
 
 function setup() {
   //song title input
-  canvas2 = createCanvas(1000, 1100);
+  canvas2 = createCanvas(920, 1020);
   canvas2.parent("canvasContainer")
 
   //song title show
